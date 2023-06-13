@@ -233,11 +233,11 @@ public abstract class BattleAreas extends Location {
             System.out.println("You killed to " + this.getUniqueMonster().getName());
             if (this.getName().equals("Dungeons")) {
                 int randItem = rItem.nextInt(100);
-                if (randItem < 10) {
+                if (randItem < 15) {
                     this.getPlayer().getInventory().setWeaponsInBag();
-                } else if (randItem < 80) {
+                } else if (randItem < 30) {
                     this.getPlayer().getInventory().setArmorsInBag();
-                } else if (randItem < 90) {
+                } else if (randItem < 55) {
                     System.out.println("You earned " + this.getUniqueMonster().getReward() + " coin");
                     this.getPlayer().setCoin(this.getPlayer().getCoin() + this.getUniqueMonster().getReward());
                     System.out.println("Your balance: " + this.getPlayer().getCoin());
