@@ -75,9 +75,7 @@ public class MyList <L>{
     }
     public L[] toArray(){
         L[] returnElements = (L[]) new Object[size];
-        for(int i = 0; i < size - 1; i++){
-            returnElements[i] = elements[i];
-        }
+        if (size - 1 >= 0) System.arraycopy(elements, 0, returnElements, 0, size - 1);
         return returnElements;
     }
     public void clear(){
@@ -99,6 +97,7 @@ public class MyList <L>{
     }
     @Override
     public String toString(){
+
         return Arrays.toString(elements);
     }
 }
