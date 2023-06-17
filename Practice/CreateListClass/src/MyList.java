@@ -97,7 +97,6 @@ public class MyList <L>{
     }
     @Override
     public String toString(){
-
         return Arrays.toString(elements);
     }
 }
