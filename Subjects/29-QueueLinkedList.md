@@ -2,7 +2,7 @@
 
 Queue arayüzü Java Collections Framework ‘un bir üyesidir. İşlemlerden geçmeden önce öğeleri depolanmasını sağlar. Collection arayüzünün bir altarayüzü olduğundan, onun bütün metotlarını kullanır. Onlara ek olarak, kuyruk yapısındaki ekleme, silme gibi işlemleri kolaylaştıran metotlara sahiptir.
 
-Ortaya çıkış nedeniyle, Queue bir FIFO (first-in-first-out, ilk giren ilk çıkar) yapısıdır. Ancak, Queue ve Collection arayüzündeki metotlar kullanılarak, FIFO yapısı LIFO (lsast-input-first-output, son giren ilk çıkar) yapısı gibi kullanılabilir. Fıfo ve LIFO yapılarına öncelik sıralamalı kuyruklar (priority queues) denilir. Bu yapılarda, öğeler ya doğal sıralarında ya da bu iş için oluşturulan comparator (mukayeseci) tarafından sıraya konulur. Tabii, LinkedList yapısı her ikisinden daha geneldir. Yapı ister FIFO, ister LIFO olsun, ilk çıkan öğe kuyruğun başındadır; remove() ya da poll() metodu ile alınır.
+Ortaya çıkış nedeniyle, Queue bir FIFO (first-in-first-out, ilk giren ilk çıkar) yapısıdır. Ancak, Queue ve Collection arayüzündeki metotlar kullanılarak, FIFO yapısı LIFO (last-input-first-output, son giren ilk çıkar) yapısı gibi kullanılabilir. Fıfo ve LIFO yapılarına öncelik sıralamalı kuyruklar (priority queues) denilir. Bu yapılarda, öğeler ya doğal sıralarında ya da bu iş için oluşturulan comparator (mukayeseci) tarafından sıraya konulur. Tabii, LinkedList yapısı her ikisinden daha geneldir. Yapı ister FIFO, ister LIFO olsun, ilk çıkan öğe kuyruğun başındadır; remove() ya da poll() metodu ile alınır.
 
 - element() : Kuyruğun başındaki öğeyi verir, ama onu kuyruktan atmaz.
 
