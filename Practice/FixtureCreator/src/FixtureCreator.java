@@ -25,7 +25,7 @@ public class FixtureCreator {
 
     public Map<Integer, Set<Soccer>> build() {
         int week = (this.teams.size() - 1) * 2;
-        int homeTeamIndex = 0, awayTeamIndex = 0;
+        int homeTeamIndex, awayTeamIndex;
         int k = 0;
         for (int i = 1; i <= week; i++) {
             soccers = new HashSet<>();
